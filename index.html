@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+    
+<div class="container">
+  <div class="calculator">
+    <div class="display">
+        <input type="text" name="display" id="display" class="display">
+    </div>
+    <div class="numbers">
+        <button class="top"onclick="display.value =''" >AC</button>
+        <button class="top"onclick="display.value = display.value.toString().slice(0,-1)" >DE</button>
+        <button class="top"onclick="display.value +='.'" >.</button>
+        <button class="top"onclick="display.value +='/'" >/</button>
+    </div>
+    <div class="numbers">
+        <button class="top_btn"onclick="display.value +='7'" >7</button>
+        <button class="top_btn"onclick="display.value +='8'" >8</button>
+        <button class="top_btn"onclick="display.value +='9'" >9</button>
+        <button class="top_btn"onclick="display.value +='*'" >*</button>
+    </div>
+    <div class="numbers">
+        <button class="top_btn"onclick="display.value +='6'" >6</button>
+        <button class="top_btn"onclick="display.value +='5'" >5</button>
+        <button class="top_btn"onclick="display.value +='4'" >4</button>
+        <button class="top_btn"onclick="display.value +='3'" >3</button>
+    </div>
+    <div class="numbers">
+        <button class="top_btn"onclick="display.value +='2'" >2</button>
+        <button class="top_btn"onclick="display.value +='1'" >1</button>
+        <button class="top_btn"onclick="display.value +='+'" >+</button>
+        <button class="top_btn"onclick="display.value +='-'" >-</button>
+    </div>
+    <div class="numbers">
+        <button class="equal"onclick="display.value = eval(display.value)"  >=</button>
+    </div>
+   
+   
+  </div>
+</div>
+
+
+</body>
+</html>
